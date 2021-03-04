@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.cloudinteractive.First.FirstFragment"
+        android:label="FirstFragment" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.cloudinteractive.Second.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.cloudinteractive.Third.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <argument
+            android:name="ID"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="Title"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="URL"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment><action android:id="@+id/action_global_firstFragment" app:destination="@id/firstFragment"/><action android:id="@+id/action_global_secondFragment" app:destination="@id/secondFragment"/><action android:id="@+id/action_global_thirdFragment" app:destination="@id/thirdFragment"/>
+</navigation>

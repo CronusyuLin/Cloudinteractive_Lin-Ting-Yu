@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cloudinteractive 林庭宇</string>
+    <string name="creator">林庭宇</string>
+    <string name="btn_requestAPI">Request API</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
